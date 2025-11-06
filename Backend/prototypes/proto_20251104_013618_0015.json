@@ -1,0 +1,241 @@
+{
+  "saved_at": "2025-11-03T21:36:18Z",
+  "room": {
+    "width_cm": 520,
+    "height_cm": 380,
+    "doors": [
+      {
+        "x": 0,
+        "y": 160,
+        "w": 90,
+        "h": 5
+      }
+    ],
+    "windows": [
+      {
+        "x": 300,
+        "y": 0,
+        "w": 120,
+        "h": 5
+      }
+    ],
+    "keepouts": []
+  },
+  "items": [
+    {
+      "id": "sofa1",
+      "type": "sofa",
+      "min_w": 180,
+      "max_w": 240,
+      "min_h": 80,
+      "max_h": 100,
+      "allow_rotate": [
+        0,
+        90
+      ],
+      "clearance_cm": 10,
+      "aspect_lock": false
+    },
+    {
+      "id": "tv1",
+      "type": "tv",
+      "min_w": 120,
+      "max_w": 150,
+      "min_h": 30,
+      "max_h": 40,
+      "allow_rotate": [
+        0
+      ],
+      "clearance_cm": 0,
+      "aspect_lock": false
+    },
+    {
+      "id": "table1",
+      "type": "table",
+      "min_w": 100,
+      "max_w": 140,
+      "min_h": 70,
+      "max_h": 90,
+      "allow_rotate": [
+        0
+      ],
+      "clearance_cm": 10,
+      "aspect_lock": false
+    },
+    {
+      "id": "chair1",
+      "type": "chair",
+      "min_w": 60,
+      "max_w": 80,
+      "min_h": 60,
+      "max_h": 80,
+      "allow_rotate": [
+        0,
+        90
+      ],
+      "clearance_cm": 5,
+      "aspect_lock": false
+    },
+    {
+      "id": "chair2",
+      "type": "chair",
+      "min_w": 60,
+      "max_w": 80,
+      "min_h": 60,
+      "max_h": 80,
+      "allow_rotate": [
+        0,
+        90
+      ],
+      "clearance_cm": 5,
+      "aspect_lock": false
+    },
+    {
+      "id": "plant1",
+      "type": "plant",
+      "min_w": 40,
+      "max_w": 50,
+      "min_h": 40,
+      "max_h": 50,
+      "allow_rotate": [
+        0
+      ],
+      "clearance_cm": 0,
+      "aspect_lock": false
+    }
+  ],
+  "placements": [
+    {
+      "id": "sofa1",
+      "type": "sofa",
+      "x": 14,
+      "y": 60,
+      "w": 180,
+      "h": 87,
+      "rotation": 0
+    },
+    {
+      "id": "tv1",
+      "type": "tv",
+      "x": 36,
+      "y": 10,
+      "w": 120,
+      "h": 36,
+      "rotation": 0
+    },
+    {
+      "id": "table1",
+      "type": "table",
+      "x": 108,
+      "y": 286,
+      "w": 100,
+      "h": 70,
+      "rotation": 0
+    },
+    {
+      "id": "chair1",
+      "type": "chair",
+      "x": 225,
+      "y": 291,
+      "w": 61,
+      "h": 60,
+      "rotation": 0
+    },
+    {
+      "id": "chair2",
+      "type": "chair",
+      "x": 32,
+      "y": 293,
+      "w": 60,
+      "h": 60,
+      "rotation": 0
+    },
+    {
+      "id": "plant1",
+      "type": "plant",
+      "x": 471,
+      "y": 325,
+      "w": 46,
+      "h": 40,
+      "rotation": 0
+    }
+  ],
+  "constraints": {
+    "hard": [
+      {
+        "type": "stay_inside_room",
+        "subject": null,
+        "object": null,
+        "a": null,
+        "b": null,
+        "wall": null,
+        "corner": null,
+        "min_cm": null,
+        "max_cm": null,
+        "max_distance_cm": null
+      },
+      {
+        "type": "no_overlap",
+        "subject": null,
+        "object": null,
+        "a": null,
+        "b": null,
+        "wall": null,
+        "corner": null,
+        "min_cm": null,
+        "max_cm": null,
+        "max_distance_cm": null
+      },
+      {
+        "type": "keepouts_respected",
+        "subject": null,
+        "object": null,
+        "a": null,
+        "b": null,
+        "wall": null,
+        "corner": null,
+        "min_cm": null,
+        "max_cm": null,
+        "max_distance_cm": null
+      }
+    ],
+    "soft": [
+      {
+        "type": "compactness",
+        "weight": 0.6,
+        "min_cm": null,
+        "max_cm": null,
+        "target_cm": null,
+        "subject": null,
+        "object": null
+      },
+      {
+        "type": "tv_viewing_distance",
+        "weight": 2.0,
+        "min_cm": 180,
+        "max_cm": 350,
+        "target_cm": null,
+        "subject": "sofa1",
+        "object": "tv1"
+      },
+      {
+        "type": "walkway",
+        "weight": 3.0,
+        "min_cm": null,
+        "max_cm": null,
+        "target_cm": null,
+        "subject": null,
+        "object": null
+      }
+    ],
+    "relations": []
+  },
+  "penalties": {
+    "compactness": 817.408906882591,
+    "walkway": 0.0,
+    "tv_viewing_distance": 104.07734198541255,
+    "overlap": 0.0,
+    "centerline": 0.0,
+    "prefer_wall": 0.0
+  }
+}

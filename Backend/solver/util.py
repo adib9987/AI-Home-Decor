@@ -1,0 +1,1 @@
+# placeholders for future geometry helpers (e.g., grid connectivity for walkways)
